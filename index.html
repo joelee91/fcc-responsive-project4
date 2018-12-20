@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>responsive project 4</title>
   <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
   <nav id="navbar">
     <header>
@@ -14,7 +16,9 @@
     </header>
     <div>
       <a href="#introduction">Introduction</a>
-      <a href="#basics">Basics</a>
+      <a href="#getting_started">Getting Started</a>
+      <a href="#variables">Variables</a>
+      <a href="#variable_types">Variable Types</a>
     </div>
   </nav>
   <main id="main-doc">
@@ -27,7 +31,7 @@
         on basic HTML and CSS.
       </p>
       <p>
-        Now, Javascript is a programming language that allows interactivity on a static webpage filled with 
+        Now, Javascript is a programming language that allows interactivity on a static webpage filled with
         HTML & CSS. We can implement features that allow for animations, data interactivity, & any other user
         interaction we can think of.
       </p>
@@ -50,8 +54,94 @@
         </li>
       </ul>
     </section>
+    <section id="getting_started" class="main-section">
+      <header>
+        Getting Started
+      </header>
+      <p>
+        It is normally advised to write Javascript in a separate file within a text editor, however, for the
+        purposes of this guide, we will be writing our code within the console of a web browser.
+      </p>
+      <p>
+        On mac while using google chrome, to open the console use the command CMD + OPTION + J. This will open
+        a console on the side of the browser where we can then begin writing our code. It would be wise to become
+        familiar with the console as it is one of the best tools for developers.
+      </p>
+    </section>
+    <section id="variables" class="main-section">
+      <header>
+        Variables
+      </header>
+      <p>
+        Variables are the building blocks of Javascript, which allow us to store information(values) such as numbers
+        and strings that would be commonly used in sentences. For example:
+      </p>
+      <code>
+        let hello = "hello world!";
+      </code>
+      <p>
+        Let's examine this piece of code. First, we are "declaring" or creating a variable by using the keyword
+        'let'. 'let' can be replaced by 'var' or 'const' as keywords depending on the usage and situation, shown below:
+      </p>
+      <code>
+        var hello = "hello world!";
+        const hello = "hello world!";
+      </code>
+      <p>
+        but we will get into that later. <br> <br>
+        The word that follows 'let' is purely a naming convention that we use to name our
+        variables. We take this variable and make it equal or 'initialize' a value, in this case a string of text. This
+        string of
+        text "hello world!" is a value that is stored within our variable 'hello'.
+      </p>
+      <p>
+        So now we have a variable and a stored value within it, we can then use this variable or 'call' it to
+        create an output by writing 'hello' in our console.
+      </p>
+      <code>
+        hello;
+      </code>
+      <p>
+        So far, we should have the code exactly as follows in our console:
+      </p>
+      <code>
+        let hello = "hello world!";
+        undefined
+        hello;
+        "hello world!"
+      </code>
+      <p>
+        Declaring our variable return undefined, however, this is not important or relevant. The next line of code
+        is where we call our variable 'hello', which then returned the value or string 'hello world'. <br>
+        We can now call hello as many times as we want as it is now stored data.
+      </p>
+      <p>
+        Before we move on to the next section, it is important to note that both single and double quotations
+        can be used for our strings. Also, semicolons after each line of code is not necessary, but a good habit
+        to form later on.
+      </p>
+    </section>
+    <section id="variable_types" class="main-section">
+      <header>
+        Variable Types
+      </header>
+      <p>
+        As mentioned earlier, we briefly discussed that variables store information/data for us to utilize throughout
+        our code. There are different types of data (a.k.a. data types) that we can store, such as strings, numbers,
+        booleans, arrays, and objects.
+      </p>
+      <p>
+        We already went over strings, so let's move on to numbers. The syntax for declaring a variable with a number
+        data type is slightly different from strings, as shown:
+      </p>
+      <code>
+        let number = 5;
+      </code>
+      
+    </section>
   </main>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>

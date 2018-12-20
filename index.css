@@ -23,13 +23,15 @@ html, body {
   color: black;
   border-bottom: 1px solid black;
   font-size: 20px;
-  padding-left: 20px;
+  padding: 10px 0px 10px 20px;
 }
 
 .main-section header{
   margin-left: 320px;
   margin-top: 35px;
   font-size: 40px;
+  border-top: 3px solid black;
+  padding-top: 20px;
 }
 .main-section p {
   margin-left: 350px;
@@ -41,4 +43,15 @@ html, body {
   margin-right: 225px;
   margin-bottom: 20px;
   font-size: 18px;
+}
+.main-section code {
+  display: block;
+  white-space: pre-line;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-left: 370px;
+  margin-right: 225px;
+  margin-bottom: 20px;
+  background-color: #d9d9d9;
+  width: 600px;
 }
