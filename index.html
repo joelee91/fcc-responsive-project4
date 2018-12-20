@@ -15,10 +15,12 @@
       Intro to JS
     </header>
     <div>
-      <a href="#introduction">Introduction</a>
-      <a href="#getting_started">Getting Started</a>
-      <a href="#variables">Variables</a>
-      <a href="#variable_types">Variable Types</a>
+      <a class="nav-link" href="#introduction">Introduction</a>
+      <a class="nav-link" href="#getting_started">Getting Started</a>
+      <a class="nav-link" href="#variables">Variables</a>
+      <a class="nav-link" href="#variable_types">Variable Types</a>
+      <a class="nav-link" href="#updating_variables">Updating Variables</a>
+      <a class="nav-link" href="#arithmetic_operators">Arithmetic Operators</a>
     </div>
   </nav>
   <main id="main-doc">
@@ -127,9 +129,15 @@
       </header>
       <p>
         As mentioned earlier, we briefly discussed that variables store information/data for us to utilize throughout
-        our code. There are different types of data (a.k.a. data types) that we can store, such as strings, numbers,
-        booleans, arrays, and objects.
+        our code. There are different types of data (a.k.a. data types) that we can store, such as:
       </p>
+      <ul>
+        <li>Strings</li>
+        <li>Numbers</li>
+        <li>Booleans</li>
+        <li>Arrays</li>
+        <li>Objects</li>
+      </ul>
       <p>
         We already went over strings, so let's move on to numbers. The syntax for declaring a variable with a number
         data type is slightly different from strings, as shown:
@@ -137,7 +145,76 @@
       <code>
         let number = 5;
       </code>
-      
+      <p>
+        We can see that there are no quotations surrounding the number 5 and that is because quotations would then
+        turn the data type of 5 from a number to a string. This is important as different outcomes will occur
+        if we try to add two strings together as opposed to two numbers. For example:
+      </p>
+      <code>
+        let number = 5;
+        number + 5;
+        10;
+
+        let number = "5";
+        number + 5;
+        "55"
+      </code>
+      <p>
+        A number data type is able to perform as numbers/integers originally do when faced with operators,
+        whereas the string will take the number 5 and simply combine with another integer or string without
+        following simple operator rules such as addition or subtraction.
+      </p>
+      <p>
+        We won't be going over the rest of the data types, however, I strongly encourage you to further read upon
+        how we use them and the correct syntax usage as well.
+      </p>
+    </section>
+    <section id="updating_variables" class="main-section">
+      <header>
+        Updating Variables
+      </header>
+      <p>
+        Once we declare variables, we are able to call on them whenever we want, as many times as we want, however,
+        what if we wanted to change the value of the variable? Well, we can:
+      </p>
+      <code>
+        let myName = "Joe";
+        myName;
+        "Joe";
+
+        myName = "Nick";
+        myName;
+        "Nick";
+      </code>
+      <p>
+        As you can see, we first declared a variable let with the name 'myName' and made it equal to the value
+        'Joe', so that when we call on the variable 'myName', the output would be 'Joe'.
+      </p>
+      <p>
+        We can then take the variable 'myName' and make it equal to another value, in this case 'Nick'. It is
+        important to note that we do not use the keyword let again. After which we are then able to call on
+        'myName' and have the output now be 'Nick'.
+      </p>
+      <p>
+        We can usually change the value of the same variable, except in the case of 'const':
+      </p>
+      <code>
+        const myName = 'Joe';
+        myName = 'Nick';
+        error
+      </code>
+      <p>
+        By using the keyword 'const', we can manage our variables more carefully and prevent them from being
+        changed throughout our code.
+      </p>
+    </section>
+    <section id="arithmetic_operators" class="main-section">
+      <header>
+        Arithmetic Operators
+      </header>
+      <p>
+        There is a simple list of operators that function much like those we see in math
+      </p>
     </section>
   </main>
 
