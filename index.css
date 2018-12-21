@@ -25,13 +25,13 @@ html, body {
   font-size: 20px;
   padding: 10px 0px 10px 20px;
 }
-
 .main-section header{
   margin-left: 320px;
   margin-top: 35px;
   font-size: 40px;
   border-top: 3px solid black;
   padding-top: 20px;
+  margin-right: 120px;
 }
 .main-section p {
   margin-left: 350px;
@@ -54,4 +54,24 @@ html, body {
   margin-bottom: 20px;
   background-color: #d9d9d9;
   width: 600px;
+}
+@media (max-width: 900px) {
+  #navbar {
+    width: 200px;
+  }
+  .main-section header {
+    margin-left: 220px;
+    margin-right: 40px;
+  }
+  .main-section p {
+    margin-left: 250px;
+    margin-right: 40px;
+  }
+  .main-section li {
+    margin-left: 270px;
+  }
+  .main-section code {
+    margin-left: 270px;
+    width: 300px;
+  }
 }
